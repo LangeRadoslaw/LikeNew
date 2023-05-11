@@ -1,2289 +1,306 @@
-<!DOCTYPE html>
-<html lang="pl">
-<div id="template-4">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        @import url('https://img.eselt.de/assets/templates/vendor/bootstrap.v3.3.5.min.css');
-        @import url('https://img.eselt.de/fonts/vendor/font-awesome-5.1.0/css/all.css');
-    </style><!----><!----><!----><!----><!----><!---->
-    <style>
-        @font-face {
-            font-family: 'Lato Light';
-            src: url('https://img.eselt.de/fonts/vendor/lato/Lato-Light.eot');
-            /* IE9 Compat Modes */
-            src: local('Lato Light'), local('Lato-Light'), url('https://img.eselt.de/fonts/vendor/lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/lato/Lato-Light.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lato/Lato-Light.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lato/Lato-Light.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/lato/Lato-Light.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Abril Fatface';
-            src: url('https://img.eselt.de/fonts/vendor/abril-fatface/AbrilFatface-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Abril Fatface Regular'), local('AbrilFatface-Regular'), url('https://img.eselt.de/fonts/vendor/abril-fatface/AbrilFatface-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/abril-fatface/AbrilFatface-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/abril-fatface/AbrilFatface-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/abril-fatface/AbrilFatface-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/abril-fatface/AbrilFatface-Regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Gravitas One';
-            src: url('https://img.eselt.de/fonts/vendor/gravitas-one/GravitasOne-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Gravitas One Regular'), local('GravitasOne-Regular'), url('https://img.eselt.de/fonts/vendor/gravitas-one/GravitasOne-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/gravitas-one/GravitasOne-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/gravitas-one/GravitasOne-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/gravitas-one/GravitasOne-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/gravitas-one/GravitasOne-Regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Oswald';
-            src: url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Bold.eot');
-            /* IE9 Compat Modes */
-            src: local('Oswald Bold'), local('Oswald-Bold'), url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Bold.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Bold.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Bold.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Bold.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Oswald';
-            src: url('https://img.eselt.de/fonts/vendor/oswald/Oswald-ExtraLight.eot');
-            /* IE9 Compat Modes */
-            src: local('Oswald Extra Light'), local('Oswald-ExtraLight'), url('https://img.eselt.de/fonts/vendor/oswald/Oswald-ExtraLight.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-ExtraLight.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-ExtraLight.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-ExtraLight.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-ExtraLight.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Oswald';
-            src: url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Light.eot');
-            /* IE9 Compat Modes */
-            src: local('Oswald Light'), local('Oswald-Light'), url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Light.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Light.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Light.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Light.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Light.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Oswald';
-            src: url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Medium.eot');
-            /* IE9 Compat Modes */
-            src: local('Oswald Medium'), local('Oswald-Medium'), url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Medium.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Medium.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Medium.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Medium.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Oswald';
-            src: url('https://img.eselt.de/fonts/vendor/oswald/Oswald-SemiBold.eot');
-            /* IE9 Compat Modes */
-            src: local('Oswald Semi Bold'), local('Oswald-SemiBold'), url('https://img.eselt.de/fonts/vendor/oswald/Oswald-SemiBold.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-SemiBold.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-SemiBold.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-SemiBold.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-SemiBold.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Oswald';
-            src: url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Oswald Regular'), local('Oswald-Regular'), url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/oswald/Oswald-Regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Sonsie One';
-            src: url('https://img.eselt.de/fonts/vendor/sonsie-one/SonsieOne-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Sonsie One Regular'), local('SonsieOne-Regular'), url('https://img.eselt.de/fonts/vendor/sonsie-one/SonsieOne-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/sonsie-one/SonsieOne-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/sonsie-one/SonsieOne-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/sonsie-one/SonsieOne-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/sonsie-one/SonsieOne-Regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Petit Formal Script';
-            src: url('https://img.eselt.de/fonts/vendor/petit-formal-script/PetitFormalScript-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Petit Formal Script Regular'), local('PetitFormalScript-Regular'), url('https://img.eselt.de/fonts/vendor/petit-formal-script/PetitFormalScript-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/petit-formal-script/PetitFormalScript-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/petit-formal-script/PetitFormalScript-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/petit-formal-script/PetitFormalScript-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/petit-formal-script/PetitFormalScript-Regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Bangers';
-            src: url('https://img.eselt.de/fonts/vendor/bangers/Bangers-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Bangers Regular'), local('Bangers-Regular'), url('https://img.eselt.de/fonts/vendor/bangers/Bangers-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/bangers/Bangers-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/bangers/Bangers-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/bangers/Bangers-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/bangers/Bangers-Regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Pacifico';
-            src: url('https://img.eselt.de/fonts/vendor/pacifico/Pacifico-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Pacifico Regular'), local('Pacifico-Regular'), url('https://img.eselt.de/fonts/vendor/pacifico/Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/pacifico/Pacifico-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pacifico/Pacifico-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pacifico/Pacifico-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/pacifico/Pacifico-Regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Lobster';
-            src: url('https://img.eselt.de/fonts/vendor/lobster/Lobster-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Lobster Regular'), local('Lobster-Regular'), url('https://img.eselt.de/fonts/vendor/lobster/Lobster-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/lobster/Lobster-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lobster/Lobster-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lobster/Lobster-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/lobster/Lobster-Regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Cinzel Decorative';
-            src: url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Bold.eot');
-            /* IE9 Compat Modes */
-            src: local('Cinzel Decorative Bold'), local('CinzelDecorative-Bold'), url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Bold.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Bold.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Bold.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Bold.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Bold.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Cinzel Decorative';
-            src: url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Black.eot');
-            /* IE9 Compat Modes */
-            src: local('Cinzel Decorative Black'), local('CinzelDecorative-Black'), url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Black.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Black.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Black.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Black.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Black.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Cinzel Decorative';
-            src: url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Cinzel Decorative Regular'), local('CinzelDecorative-Regular'), url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/cinzel-decorative/CinzelDecorative-Regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Arima Madurai';
-            font-style: normal;
-            font-weight: 700;
-            src: url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-700.eot');
-            /* IE9 Compat Modes */
-            src: local('Arima Madurai Bold'), local('ArimaMadurai-Bold'), url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-700.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-700.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-700.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-700.svg#ArimaMadurai') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Arima Madurai';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Arima Madurai'), local('ArimaMadurai-Regular'), url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/arima-madurai-v3/arima-madurai-v3-latin-ext_latin-regular.svg#ArimaMadurai') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Bree Serif';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/bree-serif-v7/bree-serif-v7-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Bree Serif Regular'), local('BreeSerif-Regular'), url('https://img.eselt.de/fonts/vendor/bree-serif-v7/bree-serif-v7-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/bree-serif-v7/bree-serif-v7-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/bree-serif-v7/bree-serif-v7-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/bree-serif-v7/bree-serif-v7-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/bree-serif-v7/bree-serif-v7-latin-ext_latin-regular.svg#BreeSerif') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Exo 2';
-            font-style: normal;
-            font-weight: 300;
-            src: url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-300.eot');
-            /* IE9 Compat Modes */
-            src: local('Exo 2 Light'), local('Exo2-Light'), url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-300.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-300.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-300.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-300.svg#Exo2') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Exo 2';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Exo 2'), local('Exo2-Regular'), url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-regular.svg#Exo2') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Exo 2';
-            font-style: normal;
-            font-weight: 800;
-            src: url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-800.eot');
-            /* IE9 Compat Modes */
-            src: local('Exo 2 Extra Bold'), local('Exo2-ExtraBold'), url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-800.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-800.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-800.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-800.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-800.svg#Exo2') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Exo 2';
-            font-style: normal;
-            font-weight: 900;
-            src: url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-900.eot');
-            /* IE9 Compat Modes */
-            src: local('Exo 2 Black'), local('Exo2-Black'), url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-900.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-900.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-900.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-900.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/exo-2-v4/exo-2-v4-latin-ext_latin-900.svg#Exo2') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 100;
-            src: url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-100.eot');
-            /* IE9 Compat Modes */
-            src: local('Lato Hairline'), local('Lato-Hairline'), url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-100.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-100.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-100.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-100.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-100.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Lato Regular'), local('Lato-Regular'), url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-regular.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 700;
-            src: url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-700.eot');
-            /* IE9 Compat Modes */
-            src: local('Lato Bold'), local('Lato-Bold'), url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-700.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-700.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-700.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/lato-v14/lato-v14-latin-ext_latin-700.svg#Lato') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Josefin Sans';
-            font-style: normal;
-            font-weight: 300;
-            src: url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-300.eot');
-            /* IE9 Compat Modes */
-            src: local('Josefin Sans Light'), local('JosefinSans-Light'), url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-300.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-300.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-300.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-300.svg#JosefinSans') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Josefin Sans';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-regular.svg#JosefinSans') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Josefin Sans';
-            font-style: normal;
-            font-weight: 700;
-            src: url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-700.eot');
-            /* IE9 Compat Modes */
-            src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-700.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-700.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-700.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/josefin-sans-v12/josefin-sans-v12-latin-ext_latin-700.svg#JosefinSans') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Open Sans Regular'), local('OpenSans-Regular'), url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-regular.svg#OpenSans') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 700;
-            src: url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-700.eot');
-            /* IE9 Compat Modes */
-            src: local('Open Sans Bold'), local('OpenSans-Bold'), url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-700.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-700.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-700.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-700.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-700.svg#OpenSans') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 800;
-            src: url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-800.eot');
-            /* IE9 Compat Modes */
-            src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-800.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-800.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-800.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-800.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/open-sans-v15/open-sans-v15-latin_latin-ext-800.svg#OpenSans') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Open Sans Condensed';
-            font-style: normal;
-            font-weight: 300;
-            src: url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-300.eot');
-            /* IE9 Compat Modes */
-            src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-300.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-300.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-300.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-300.svg#OpenSansCondensed') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Open Sans Condensed';
-            font-style: normal;
-            font-weight: 700;
-            src: url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-700.eot');
-            /* IE9 Compat Modes */
-            src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-700.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-700.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-700.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/open-sans-condensed-v12/open-sans-condensed-v12-latin-ext_latin-700.svg#OpenSansCondensed') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Playball';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/playball-v7/playball-v7-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Playball'), local('Playball-Regular'), url('https://img.eselt.de/fonts/vendor/playball-v7/playball-v7-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/playball-v7/playball-v7-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/playball-v7/playball-v7-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/playball-v7/playball-v7-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/playball-v7/playball-v7-latin-ext_latin-regular.svg#Playball') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('PT Sans'), local('PTSans-Regular'), url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-regular.svg#PTSans') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'PT Sans';
-            font-style: normal;
-            font-weight: 700;
-            src: url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-700.eot');
-            /* IE9 Compat Modes */
-            src: local('PT Sans Bold'), local('PTSans-Bold'), url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-700.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-700.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-700.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-v9/pt-sans-v9-latin-ext_latin-700.svg#PTSans') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'PT Sans Narrow';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('PT Sans Narrow'), local('PTSans-Narrow'), url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-regular.svg#PTSansNarrow') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'PT Sans Narrow';
-            font-style: normal;
-            font-weight: 700;
-            src: url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-700.eot');
-            /* IE9 Compat Modes */
-            src: local('PT Sans Narrow Bold'), local('PTSans-NarrowBold'), url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-700.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-700.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-700.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/pt-sans-narrow-v8/pt-sans-narrow-v8-latin-ext_latin-700.svg#PTSansNarrow') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Russo One';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/russo-one-v6/russo-one-v6-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Russo One'), local('RussoOne-Regular'), url('https://img.eselt.de/fonts/vendor/russo-one-v6/russo-one-v6-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/russo-one-v6/russo-one-v6-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/russo-one-v6/russo-one-v6-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/russo-one-v6/russo-one-v6-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/russo-one-v6/russo-one-v6-latin-ext_latin-regular.svg#RussoOne') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Yanone Kaffeesatz';
-            font-style: normal;
-            font-weight: 400;
-            src: url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-regular.svg#YanoneKaffeesatz') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Yanone Kaffeesatz';
-            font-style: normal;
-            font-weight: 700;
-            src: url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-700.eot');
-            /* IE9 Compat Modes */
-            src: local('Yanone Kaffeesatz Bold'), local('YanoneKaffeesatz-Bold'), url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-700.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-700.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-700.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/yanone-kaffeesatz-v9/yanone-kaffeesatz-v9-latin-ext_latin-700.svg#YanoneKaffeesatz') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Cuprum';
-            src: url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Regular.eot');
-            /* IE9 Compat Modes */
-            src: local('Cuprum Regular'), local('Cuprum-Regular'), url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Regular.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Regular.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Regular.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Regular.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Regular.svg#YanoneKaffeesatz') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Cuprum';
-            src: url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Bold.eot');
-            /* IE9 Compat Modes */
-            src: local('Cuprum Bold'), local('Cuprum-Bold'), url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Bold.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Bold.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Bold.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Bold.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Bold.svg#YanoneKaffeesatz') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Cuprum';
-            src: url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-BoldItalic.eot');
-            /* IE9 Compat Modes */
-            src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'), url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-BoldItalic.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-BoldItalic.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-BoldItalic.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-BoldItalic.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-BoldItalic.svg#YanoneKaffeesatz') format('svg');
-            /* Legacy iOS */
-        }
-
-        @font-face {
-            font-family: 'Cuprum';
-            src: url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Italic.eot');
-            /* IE9 Compat Modes */
-            src: local('Cuprum Italic'), local('Cuprum-Italic'), url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Italic.eot?#iefix') format('embedded-opentype'),
-                /* IE6-IE8 */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Italic.woff2') format('woff2'),
-                /* Super Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Italic.woff') format('woff'),
-                /* Modern Browsers */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Italic.ttf') format('truetype'),
-                /* Safari, Android, iOS */
-                url('https://img.eselt.de/fonts/vendor/cuprum/Cuprum-Italic.svg#YanoneKaffeesatz') format('svg');
-            /* Legacy iOS */
-        }
-    </style><!----><!----><!---->
-    <style id="template__version">
-        .gallery__wrapper {
-            display: flex;
-            height: 600px
-        }
-
-        @media (max-width:992px) {
-            .gallery__wrapper {
-                display: block;
-                height: auto
-            }
-        }
-
-        .gallery__wrapper .gallery__bg {
-            height: 100%;
-            overflow-y: auto
-        }
-
-        @media (max-width:992px) {
-            .gallery__wrapper .gallery__bg {
-                height: auto
-            }
-        }
-
-        .images .image-wrapper {
-            margin: 24px auto;
-            text-align: center;
-            max-width: 100%;
-            height: auto
-        }
-
-        .images .image-wrapper img {
-            max-width: 80%;
-            margin-left: auto;
-            margin-right: auto
-        }
-
-        .content__gallery {
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-            background: hsla(0, 0%, 100%, .6);
-            text-align: center
-        }
-
-        .content__gallery .slider__wrapper {
-            overflow: hidden;
-            margin: 12px;
-            background: hsla(0, 0%, 100%, .3);
-            width: 100%;
-            height: 600px
-        }
-
-        @media (max-width:768px) {
-            .content__gallery .slider__wrapper {
-                height: 450px
-            }
-        }
-
-        @media (max-width:480px) {
-            .content__gallery .slider__wrapper {
-                height: 300px
-            }
-        }
-
-        .content__gallery .slider__wrapper .slider {
-            height: 100%;
-            width: 100%;
-            display: inline-block;
-            white-space: nowrap;
-            font-size: 0;
-            transition: all 0s 9999999s
-        }
-
-        .content__gallery .slider__wrapper .slider>* {
-            height: 100%;
-            width: 100%;
-            display: inline-block;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 50%
-        }
-
-        .content__gallery .thumb__float {
-            display: inline-block;
-            margin: 12px;
-            border: 1px solid #ab8b64
-        }
-
-        .content__gallery .thumb__float .thumb__wrapper {
-            width: 80px;
-            height: 80px;
-            padding: 3px;
-            background: #fff
-        }
-
-        .content__gallery .thumb__float .thumb__wrapper img {
-            cursor: pointer
-        }
-
-        @media (max-width:1152px) {
-            .content__gallery .thumb__float .thumb__wrapper {
-                width: 60px;
-                height: 60px;
-                padding: 5px
-            }
-        }
-
-        @media (max-width:480px) {
-            .content__gallery .thumb__float .thumb__wrapper {
-                width: 40px;
-                height: 40px;
-                padding: 3px
-            }
-        }
-
-        .content__gallery--flex-column {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: column;
-            height: 600px;
-            overflow-x: auto
-        }
-
-        @media (max-width:768px) {
-            .content__gallery--flex-column {
-                flex-direction: row;
-                overflow-x: hidden;
-                height: auto;
-                justify-content: center
-            }
-        }
-
-        .content__gallery--flex-column .slider__wrapper {
-            width: 100%;
-            height: 100%
-        }
-
-        @media (max-width:768px) {
-            .content__gallery--flex-column .slider__wrapper {
-                height: 300px
-            }
-        }
-
-        .content__gallery--left .slider__wrapper {
-            order: 2;
-            width: 800px
-        }
-
-        @media (max-width:1100px) {
-            .content__gallery--left .slider__wrapper {
-                width: 700px
-            }
-        }
-
-        @media (max-width:1000px) {
-            .content__gallery--left .slider__wrapper {
-                width: 600px
-            }
-        }
-
-        @media (max-width:900px) {
-            .content__gallery--left .slider__wrapper {
-                width: 550px
-            }
-        }
-
-        @media (max-width:800px) {
-            .content__gallery--left .slider__wrapper {
-                width: 500px
-            }
-        }
-
-        @media (max-width:768px) {
-            .content__gallery--left .slider__wrapper {
-                width: 100%;
-                order: 1
-            }
-        }
-
-        .content__gallery--left .thumb__float {
-            order: 1
-        }
-
-        @media (max-width:768px) {
-            .content__gallery--left .thumb__float {
-                order: 2
-            }
-        }
-
-        .content__gallery--right .slider__wrapper {
-            order: 1;
-            width: 800px
-        }
-
-        @media (max-width:1100px) {
-            .content__gallery--right .slider__wrapper {
-                width: 700px
-            }
-        }
-
-        @media (max-width:1000px) {
-            .content__gallery--right .slider__wrapper {
-                width: 600px
-            }
-        }
-
-        @media (max-width:900px) {
-            .content__gallery--right .slider__wrapper {
-                width: 550px
-            }
-        }
-
-        @media (max-width:800px) {
-            .content__gallery--right .slider__wrapper {
-                width: 500px
-            }
-        }
-
-        @media (max-width:768px) {
-            .content__gallery--right .slider__wrapper {
-                width: 100%
-            }
-        }
-
-        .content__gallery--right .thumb__float {
-            order: 2
-        }
-
-        .content__gallery--bottom {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center
-        }
-
-        .content__gallery--bottom .slider__wrapper {
-            order: 1
-        }
-
-        .content__gallery--bottom .thumb__float {
-            order: 2
-        }
-
-        .content__gallery--higher {
-            height: 750px
-        }
-
-        @media (max-width:768px) {
-            .content__gallery--higher {
-                height: auto
-            }
-        }
-
-        .content__gallery--highest {
-            height: 900px
-        }
-
-        @media (max-width:768px) {
-            .content__gallery--highest {
-                height: auto
-            }
-        }
-
-        .image-cover__wrapper {
-            text-align: center
-        }
-
-        .image-cover__img {
-            max-width: 100%;
-            margin: 0 auto
-        }
-
-        .slideshow {
-            height: 600px;
-            width: 100%
-        }
-
-        .slideshow>* {
-            height: 100%;
-            width: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 50%;
-            margin-bottom: 10%
-        }
-
-        #layout__layout-3 .content__gallery--flex-column {
-            flex-direction: row;
-            overflow-x: hidden;
-            height: auto;
-            justify-content: center
-        }
-
-        #layout__layout-3 .content__gallery--left .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-3 .content__gallery--left .thumb__float {
-            order: 2
-        }
-
-        #layout__layout-3 .content__gallery--right .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-4 .content__gallery--flex-column {
-            flex-direction: row;
-            overflow-x: hidden;
-            height: auto;
-            justify-content: center
-        }
-
-        #layout__layout-4 .content__gallery--left .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-4 .content__gallery--left .thumb__float {
-            order: 2
-        }
-
-        #layout__layout-4 .content__gallery--right .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-5 .content__gallery--flex-column {
-            flex-direction: row;
-            overflow-x: hidden;
-            height: auto;
-            justify-content: center
-        }
-
-        #layout__layout-5 .content__gallery--left .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-5 .content__gallery--left .thumb__float {
-            order: 2
-        }
-
-        #layout__layout-5 .content__gallery--right .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-6 .content__gallery--flex-column {
-            flex-direction: row;
-            overflow-x: hidden;
-            height: auto;
-            justify-content: center
-        }
-
-        #layout__layout-6 .content__gallery--left .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-6 .content__gallery--left .thumb__float {
-            order: 2
-        }
-
-        #layout__layout-6 .content__gallery--right .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-7 .content__gallery--flex-column {
-            flex-direction: row;
-            overflow-x: hidden;
-            height: auto;
-            justify-content: center
-        }
-
-        #layout__layout-7 .content__gallery--left .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-7 .content__gallery--left .thumb__float {
-            order: 2
-        }
-
-        #layout__layout-7 .content__gallery--right .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-8 .content__gallery--flex-column {
-            flex-direction: row;
-            overflow-x: hidden;
-            height: auto;
-            justify-content: center
-        }
-
-        #layout__layout-8 .content__gallery--left .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        #layout__layout-8 .content__gallery--left .thumb__float {
-            order: 2
-        }
-
-        #layout__layout-8 .content__gallery--right .slider__wrapper {
-            width: 100%;
-            height: 480px;
-            order: 1
-        }
-
-        .content_tabs {
-            margin: 0;
-            padding: 0;
-            overflow: hidden
-        }
-
-        .tabs__label {
-            flex: 1;
-            color: #ab8b64;
-            border-right: 2px solid #ab8b64;
-            padding: 16px 0;
-            background: #f3eee8;
-            text-decoration: none;
-            font-weight: 700;
-            text-align: center;
-            cursor: pointer;
-            z-index: 999
-        }
-
-        .tabs__label:hover {
-            background: #ab8b64;
-            color: #f3eee8
-        }
-
-        .tabs__label:last-of-type a {
-            border: none
-        }
-
-        .tabs__wrapper {
-            position: relative;
-            overflow: hidden
-        }
-
-        .tabs__slider {
-            height: 600px;
-            width: 100%;
-            transition: all 0s 9999999s
-        }
-
-        .tabs__slider>* {
-            height: 100%;
-            width: 100%;
-            overflow-y: auto;
-            overflow-x: hidden
-        }
-
-        .tabs__tab {
-            background: #fff;
-            width: 100%;
-            display: flex;
-            flex-flow: row wrap
-        }
-
-        @media (max-width:768px) {
-            .tabs__tab {
-                flex-direction: column
-            }
-        }
-
-        .tabs__box {
-            border: 2px solid #ab8b64;
-            width: 100%
-        }
-
-        .tabs__box--content {
-            background: #fff;
-            padding: 12px
-        }
-
-        .tabs__box--aside .aside {
-            margin: 0 !important;
-            min-height: 100%
-        }
-
-        .tabs__box--aside .aside-block {
-            margin: 0 !important
-        }
-
-        .fa,
-        .far,
-        .fas {
-            font-family: Font Awesome\ 5 Free !important
-        }
-
-        .word-break {
-            word-break: break-all !important
-        }
-
-        .footer .footer-block__wrapper {
-            padding: 0 16px
-        }
-
-        @media (max-width:360px) {
-            .footer .footer-block .footer-block__body {
-                font-size: 15px !important
-            }
-        }
-
-        .footer .footer-block .footer-block__body .fa {
-            margin-right: 5px
-        }
-
-        .aside-block .aside-block__icons img {
-            border-radius: 6px
-        }
-
-        .container {
-            max-width: 100%
-        }
-
-        #layout__gallery {
-            margin: 24px 0
-        }
-
-        .order-1 {
-            order: 1
-        }
-
-        .order-2 {
-            order: 2
-        }
-
-        .flex {
-            display: flex
-        }
-
-        .flex-1 {
-            flex: 1
-        }
-
-        .flex-2 {
-            flex: 2
-        }
-
-        .direction-column {
-            flex-direction: column
-        }
-
-        .mt0 {
-            margin-top: 0 !important
-        }
-
-        .mb0 {
-            margin-bottom: 0 !important
-        }
-
-        .col-md-3 .aside-block .aside-block__icons {
-            text-align: center
-        }
-
-        .col-md-3 .aside-block .aside-block__icons img {
-            width: 75px
-        }
-
-        @media (max-width:992px) {
-            .menu {
-                font-size: 16px !important
-            }
-        }
-
-        .disabled-link,
-        .disabled-links a {
-            pointer-events: none;
-            cursor: default
-        }
-
-        img {
-            max-width: 100%
-        }
-
-        .yt {
-            width: 100%;
-            text-align: center;
-            position: relative;
-            overflow: hidden
-        }
-
-        .yt img {
-            display: block;
-            max-width: 100%;
-            border: 0;
-            margin: 1em auto
-        }
-
-        .yt a:after {
-            content: "\A0\25BA";
-            position: absolute;
-            width: 60px;
-            height: 50px;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            border: 0;
-            border-radius: 10px;
-            color: #fff;
-            background: rgba(0, 0, 0, .6);
-            font-size: 24px;
-            line-height: 50px;
-            cursor: pointer
-        }
-
-        .yt a:hover:after {
-            background: #cc181e
-        }
-
-        .yt__img {
-            margin-top: 1em;
-            margin-bottom: 1em;
-            display: block
-        }
-
-        #template-4 {
-            font-family: Verdana, sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            color: #666
-        }
-
-        #template-4 header {
-            margin: 0;
-            padding: 0;
-            background: none;
-            box-shadow: none;
-            text-shadow: none;
-            position: relative;
-            width: auto;
-            height: auto;
-            overflow: hidden;
-            z-index: auto
-        }
-
-        @media (max-width:768px) {
-            #template-4 .container {
-                padding: 0
-            }
-        }
-
-        #template-4 .header {
-            border-radius: 10px
-        }
-
-        #template-4 .header .container {
-            display: flex;
-            align-items: center
-        }
-
-        @media (max-width:768px) {
-            #template-4 .header .container {
-                display: block
-            }
-        }
-
-        #template-4 .header .header__brand {
-            margin: 0;
-            flex: 1;
-            padding: 12px
-        }
-
-        #template-4 .header .header__brand .header__logo {
-            font-family: Verdana, sans-serif;
-            font-weight: 700;
-            color: #f3eee8;
-            font-size: 32px;
-            margin: 12px 0
-        }
-
-        #template-4 .header .header__brand .header__logo img {
-            max-width: 80%
-        }
-
-        #template-4 .header .header__brand .header__slogan {
-            font-family: Verdana, sans-serif;
-            font-weight: 400;
-            font-size: 25.6px;
-            color: #f3eee8
-        }
-
-        #template-4 .header .header__contact {
-            margin: 0;
-            padding: 12px;
-            font-family: Verdana, sans-serif;
-            font-weight: 400;
-            text-align: right;
-            color: #f3eee8;
-            flex: 1
-        }
-
-        #template-4 .header .header__contact a {
-            color: #f3eee8
-        }
-
-        #template-4 .header .header__contact .fa {
-            margin-right: 6px;
-            margin-left: 12px
-        }
-
-        #template-4 .footer {
-            width: 100%;
-            padding: 20px;
-            background-color: #ab8b64;
-            overflow: hidden;
-            color: #fff;
-            border-radius: 10px
-        }
-
-        #template-4 .footer .footer__contact {
-            float: right;
-            padding: 12px
-        }
-
-        #template-4 .footer .footer__contact a {
-            color: #f3eee8
-        }
-
-        #template-4 .footer .footer__contact ul {
-            list-style: none
-        }
-
-        #template-4 .footer .footer__contact ul li {
-            text-align: right
-        }
-
-        #template-4 .menu {
-            width: 100%;
-            background: #f3eee8;
-            border-bottom: 1px solid #ab8b64;
-            font-size: 20px;
-            font-weight: 700
-        }
-
-        #template-4 .menu .container {
-            width: 100% !important;
-            padding: 0
-        }
-
-        #template-4 .menu .menu__list {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            list-style: none
-        }
-
-        @media (max-width:768px) {
-            #template-4 .menu .menu__list {
-                display: block
-            }
-        }
-
-        #template-4 .menu .menu__item {
-            flex: 1;
-            text-align: center
-        }
-
-        #template-4 .menu .menu__item a {
-            display: block;
-            background: #f3eee8;
-            color: #ab8b64;
-            text-decoration: none;
-            border-right: 1px solid #ab8b64;
-            font-size: 16px;
-            padding: 18px 0
-        }
-
-        #template-4 .menu .menu__item a:hover {
-            background: #ab8b64;
-            color: #fff
-        }
-
-        @media (max-width:768px) {
-            #template-4 .menu .menu__item a {
-                border-right: 0;
-                border-bottom: 1px solid #ab8b64
-            }
-        }
-
-        #template-4 .menu .menu__item:last-child a {
-            border-right: 0
-        }
-
-        @media (max-width:768px) {
-            #template-4 .menu {
-                font-size: 16px
-            }
-        }
-
-        #template-4 .content {
-            padding: 12px 0
-        }
-
-        #template-4 .content .row {
-            margin: 0
-        }
-
-        #template-4 .content .content__header {
-            margin-top: 24px
-        }
-
-        #template-4 .content .content__header .content__title {
-            margin: 0;
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 1.2;
-            color: #ab8b64;
-            text-align: left
-        }
-
-        @media (max-width:768px) {
-            #template-4 .content .content__header .content__title {
-                font-size: 1.6em
-            }
-        }
-
-        @media (max-width:480px) {
-            #template-4 .content .content__header .content__title {
-                font-size: 1.2em
-            }
-        }
-
-        #template-4 .content .content__description {
-            margin: 24px 0;
-            font-size: 1.1em
-        }
-
-        @media (max-width:768px) {
-            #template-4 .content .content__description {
-                font-size: .9em
-            }
-        }
-
-        #template-4 .content .content__description p {
-            margin-bottom: 12px;
-            margin-top: 0
-        }
-
-        #template-4 .content .content__bulletpoints {
-            margin: 24px 0
-        }
-
-        #template-4 .content .content__bulletpoints .bulletpoints__list {
-            margin: 0;
-            padding: 0;
-            list-style: none
-        }
-
-        #template-4 .content .content__bulletpoints .bulletpoints__item {
-            font-size: 1.1em;
-            margin-bottom: 12px
-        }
-
-        @media (max-width:768px) {
-            #template-4 .content .content__bulletpoints .bulletpoints__item {
-                font-size: .9em
-            }
-        }
-
-        #template-4 .template__wrapper {
-            background: #fff;
-            width: 100%
-        }
-
-        #template-4 .template__wrapper .footer__eselt {
-            margin: 12px auto;
-            font-family: Helvetica, sans-serif;
-            font-size: .8em;
-            font-weight: 400;
-            color: #888;
-            text-align: right;
-            width: 98%;
-            order: 99
-        }
-
-        #template-4 .template__wrapper .footer__eselt a {
-            color: #888
-        }
-
-        @media (max-width:768px) {
-            #template-4 .template__wrapper .footer__eselt {
-                text-align: center
-            }
-        }
-
-        #template-4 .template__wrapper .footer__logo {
-            font-family: Titillium Web, sans-serif
-        }
-
-        #template-4 .template__wrapper .footer__logo:before {
-            content: "&#x45;&#x72;&#x73;&#x74;&#x65;&#x6C;&#x6C;&#x74;&#x20;&#x6D;&#x69;&#x74; "
-        }
-
-        #template-4 .template__wrapper .footer__logo .text:before {
-            content: "&#x45;&#x73;&#x65;&#x6C;&#x74;"
-        }
-
-        #template-4 .vertical-align-middle {
-            white-space: nowrap;
-            text-align: center
-        }
-
-        #template-4 .vertical-align-middle .vertical-align-helper {
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle
-        }
-
-        #template-4 .vertical-align-middle img {
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0;
-            padding: 0;
-            max-width: 100%;
-            max-height: 100%
-        }
-
-        #template-4 .float-left {
-            float: left
-        }
-
-        #template-4 .aside {
-            background: #f3eee8;
-            padding: 12px 0;
-            overflow: hidden;
-            clear: both
-        }
-
-        #template-4 .aside-block {
-            text-align: left;
-            padding: 12px
-        }
-
-        #template-4 .aside-block .aside-block__title {
-            font-family: Verdana, sans-serif;
-            font-size: 32px;
-            font-weight: 700;
-            color: #ab8b64;
-            margin-bottom: 12px;
-            text-align: left
-        }
-
-        #template-4 .aside-block .aside-block__title .fa {
-            font-size: 32px
-        }
-
-        #template-4 .aside-block .aside-block__body {
-            font-family: Verdana, sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            color: #666
-        }
-
-        #template-4 .aside-block .aside-block__icons {
-            text-align: left;
-            margin-bottom: 12px
-        }
-
-        #template-4 .aside-block .aside-block__icons img {
-            margin: 3px
-        }
-
-        @media (max-width:1200px) and (min-width:768px) {
-            #template-4 .aside-block {
-                padding: 6px
-            }
-
-            #template-4 .aside-block .aside-block__title,
-            #template-4 .aside-block .aside-block__title .fa {
-                font-size: 26px
-            }
-
-            #template-4 .aside-block .aside-block__body {
-                font-size: 15px
-            }
-        }
-
-        #template-4 .template__wrapper {
-            background-color: rgb(255, 255, 255);
-        }
-
-        #template-4 .header {
-            background-color: rgb(255, 255, 255);
-        }
-
-        #template-4 .header .header__brand .header__logo {
-            font-family: "Open Sans";
-            color: rgb(39, 47, 70);
-            border-color: rgb(39, 47, 70);
-        }
-
-        #template-4 .header .header__brand .header__slogan {
-            font-family: "Open Sans";
-            color: rgb(39, 47, 70);
-        }
-
-        #template-4 .header .header__contact {
-            font-family: "Open Sans";
-            color: rgb(39, 47, 70);
-        }
-
-        #template-4 .header .header__contact a {
-            color: rgb(39, 47, 70);
-        }
-
-        #template-4 .footer {
-            font-family: "Bree Serif";
-            background-color: rgb(255, 255, 255);
-        }
-
-        #template-4 .footer .footer__contact {
-            color: rgb(39, 47, 70);
-        }
-
-        #template-4 .footer .footer__contact a {
-            color: rgb(39, 47, 70);
-        }
-
-        #template-4 .menu {
-            font-family: "Bree Serif";
-            border-color: rgb(255, 255, 255);
-        }
-
-        #template-4 .menu .menu__item a {
-            background-color: rgb(39, 47, 70);
-            color: rgb(255, 255, 255);
-            border-color: rgb(255, 255, 255);
-        }
-
-        #template-4 .menu .menu__item a:hover {
-            background-color: rgb(255, 255, 255);
-            color: rgb(39, 47, 70);
-        }
-
-        #template-4 .content .content__header .content__title {
-            font-family: "Bree Serif";
-            color: rgb(39, 47, 70);
-            border-color: rgb(39, 47, 70);
-        }
-
-        #template-4 .content {
-            font-family: "Bree Serif";
-            color: #444444;
-            background: rgb(225, 250, 242);
-            margin: 0;
-        }
-
-        #template-4 .aside {
-            background: rgb(225, 250, 242);
-        }
-
-        #template-4 .aside-block .aside-block__body {
-            font-family: "Bree Serif";
-            color: #444444;
-        }
-
-        #template-4 .aside .aside-block .aside-block__title {
-            font-family: "Bree Serif";
-            color: rgb(39, 47, 70);
-        }
-
-        #template-4 .images .image-wrapper img {
-            border-color: rgb(255, 255, 255);
-            background-color: rgb(39, 47, 70);
-        }
-
-        #template-4 .content__gallery .thumb__float {
-            border-color: rgb(255, 255, 255);
-        }
-
-        #template-4 .content__gallery .gallery__prev-next a {
-            color: rgb(255, 255, 255);
-        }
-
-        #template-4 .content__gallery {
-            background: rgb(225, 250, 242);
-        }
-
-        #template-4 .tabs__label {
-            background: rgb(39, 47, 70);
-            color: rgb(255, 255, 255);
-            border-color: rgb(255, 255, 255);
-        }
-
-        #template-4 .tabs__label:hover {
-            background: rgb(255, 255, 255);
-            color: rgb(39, 47, 70);
-        }
-
-        #template-4 .tabs__box {
-            border-color: rgb(255, 255, 255);
-        }
-
-        #template-4 .tabs__box--content {
-            background: rgb(225, 250, 242);
-        }
-
-        #template-4 .template__wrapper .yiNSCxqLDZopv {
-            margin: 12px auto;
-            font-family: Helvetica, sans-serif;
-            font-size: 0.8em;
-            font-weight: normal;
-            color: #888;
-            text-align: right;
-            width: 100%;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            padding: 6px 16px;
-            background: #fff;
-        }
-
-        #template-4 .template__wrapper .yiNSCxqLDZopv a {
-            color: #888;
-        }
-
-        @media (max-width: 768px) {
-            #template-4 .template__wrapper .yiNSCxqLDZopv {
-                text-align: center;
-            }
-        }
-
-        #template-4 .template__wrapper .ntLnbYSEiLa6yZjw2gP {
-            font-family: 'Titillium Web', sans-serif;
-        }
-    </style><!----><!----><!----><!----><!----><!----><!----><!---->
-    <div>
-        <div>
-            <div class="template__wrapper">
-                <div class="container" style="position: relative; padding-bottom: 46px;">
-                    <div class="yiNSCxqLDZopv"><a href="https://www.ebay.com/itm/255210518350" target="_blank"><span>
-                                Created with <strong><span class="ntLnbYSEiLa6yZjw2gP"> &#x45;&#x73;&#x65;&#x6C;&#x74;
-                                    </span></strong></span> -
-                            <span>&#x52;&#x65;&#x73;&#x70;&#x6F;&#x6E;&#x73;&#x69;&#x76;&#x65;&#x20;&#x44;&#x65;&#x73;&#x69;&#x67;&#x6E;&#x73;&#x20;&#x66;&#x6F;&#x72;&#x20;&#x65;&#x42;&#x61;&#x79;&#x20;&#x53;&#x65;&#x6C;&#x6C;&#x65;&#x72;&#x73;</span></a>
-                    </div>
-                    <header class="header">
-                        <div class="container">
-                            <div class="header__brand">
-                                <div class="header__logo">
-                                    <svg width="144px" height="36px" viewBox="0 0 144 36" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <defs>
-                                            <polygon id="path-1"
-                                                points="-6.67503588e-16 0 30.7215227 0 30.7215227 28.8224335 -6.67503588e-16 28.8224335">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<div id="body">
+    <div class="body-shadow"></div>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div id="welcome">
+                    <img src="https://exio.pl/ebay/sweetorganic/img/smile.png"> Willkommen zu unseren Auktionen
+                </div>
+                <ul id="menu">
+                    <li><a href="LINK_DO_KOMENTARZY" target="_blank"><img
+                                src="https://exio.pl/ebay/sweetorganic/img/arrow.png">Feedback</a></li>
+                    <li><a href="LINK_DO_AUKCJI" target="_blank"><img
+                                src="https://exio.pl/ebay/sweetorganic/img/arrow.png">Andere auktionen</a></li>
+                    <li><a href="LINK_DO_KONTAKTU" target="_blank"><img
+                                src="https://exio.pl/ebay/sweetorganic/img/arrow.png">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="container">
+                <div id="headimg">
+                    <div id="logotop" z-index="10">
+                        <svg width="144px" height="36px" viewBox="0 0 144 36" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <polygon id="path-1"
+                                    points="-6.67503588e-16 0 30.7215227 0 30.7215227 28.8224335 -6.67503588e-16 28.8224335">
+                                </polygon>
+                                <polygon id="path-3" points="0 0 30.7215227 0 30.7215227 28.8223584 0 28.8223584">
+                                </polygon>
+                            </defs>
+                            <g id="Homepage-[desktop]" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="homepage" transform="translate(-50.000000, -32.000000)">
+                                    <g id="topbar" transform="translate(50.000000, 20.000000)">
+                                        <g id="likeNew-logo" transform="translate(0.000000, 12.000000)">
+                                            <polygon id="Fill-1" fill="rgb(51, 188, 132)"
+                                                points="65.4654429 26.3420436 55.4706828 26.3420436 55.4706828 9.62624135 59.2900204 9.62624135 59.2900204 22.9939229 65.4654429 22.9939229">
                                             </polygon>
-                                            <polygon id="path-3"
-                                                points="0 0 30.7215227 0 30.7215227 28.8223584 0 28.8223584"></polygon>
-                                        </defs>
-                                        <g id="Homepage-[desktop]" stroke="none" stroke-width="1" fill="none"
-                                            fill-rule="evenodd">
-                                            <g id="homepage" transform="translate(-50.000000, -32.000000)">
-                                                <g id="topbar" transform="translate(50.000000, 20.000000)">
-                                                    <g id="likeNew-logo" transform="translate(0.000000, 12.000000)">
-                                                        <polygon id="Fill-1" fill="#111111"
-                                                            points="65.4654429 26.3420436 55.4706828 26.3420436 55.4706828 9.62624135 59.2900204 9.62624135 59.2900204 22.9939229 65.4654429 22.9939229">
-                                                        </polygon>
-                                                        <path
-                                                            d="M66.953271,26.3419308 L70.5742014,26.3419308 L70.5742014,13.7678778 L66.953271,13.7678778 L66.953271,26.3419308 Z M70.2517898,8.63409288 C70.6647623,9.04781687 70.8718122,9.54383474 70.8718122,10.1221465 C70.8718122,10.7012098 70.6647623,11.1972276 70.2517898,11.6102001 C69.8384416,12.0239241 69.3424237,12.2302224 68.7637362,12.2302224 C68.1846729,12.2302224 67.6886551,12.0239241 67.2756826,11.6102001 C66.8623344,11.1972276 66.6556603,10.7012098 66.6556603,10.1221465 C66.6556603,9.54383474 66.8623344,9.04781687 67.2756826,8.63409288 C67.6886551,8.22112042 68.1846729,8.01407054 68.7637362,8.01407054 C69.3424237,8.01407054 69.8384416,8.22112042 70.2517898,8.63409288 L70.2517898,8.63409288 Z"
-                                                            id="Fill-2" fill="#111111"></path>
-                                                        <polygon id="Fill-4" fill="#111111"
-                                                            points="76.17879 26.3420436 72.5578596 26.3420436 72.5578596 9.22942705 76.17879 9.22942705 76.17879 19.3977934 80.1473088 13.7679906 84.3134831 13.7679906 79.9485258 19.7946077 84.3882616 26.3420436 80.1965348 26.3420436 76.17879 20.1666211">
-                                                        </polygon>
-                                                        <path
-                                                            d="M89.992775,16.3969604 C89.4137117,16.3969604 88.9015357,16.607768 88.4547438,17.0293832 C88.0087035,17.4509984 87.7110928,18.0751542 87.5619116,18.9018507 L91.9268689,18.9018507 L91.9268689,18.60424 C91.8111314,17.1327203 91.1663082,16.3969604 89.992775,16.3969604 L89.992775,16.3969604 Z M94.5309627,25.6228928 C93.6711984,26.1850464 92.3567511,26.4661232 90.5879964,26.4661232 C88.5208795,26.4661232 86.9133307,25.867144 85.7642226,24.6680584 C84.614363,23.4693486 84.0401848,21.9275597 84.0401848,20.0426918 C84.0401848,18.0420864 84.5985806,16.4754966 85.7142451,15.3429225 C86.8306611,14.2107241 88.2071106,13.6440613 89.8439696,13.6440613 C91.5304304,13.6440613 92.8610359,14.1359456 93.8365377,15.1197144 C94.8120395,16.1034832 95.3001662,17.5712452 95.3001662,19.521873 C95.3001662,19.9025291 95.2336547,20.5552436 95.101759,21.4811436 L87.7110928,21.4811436 C87.9591017,22.1755686 88.3886081,22.7129213 89.0003635,23.0932017 C89.6121188,23.4738578 90.3478787,23.6636222 91.207643,23.6636222 C92.4807555,23.6636222 93.5885288,23.3081428 94.5309627,22.5971838 L94.5309627,25.6228928 Z"
-                                                            id="Fill-5" fill="#111111"></path>
-                                                        <path
-                                                            d="M100.706272,26.3420436 L96.8869349,26.3420436 L96.8869349,9.62624135 L101.078286,9.62624135 L104.972026,16.5456906 C105.517646,17.5215682 105.99262,18.4350678 106.397702,19.2861894 C106.803159,20.1380625 107.063568,20.7370416 107.179306,21.0842541 L107.377713,21.6298738 C107.211998,20.4063631 107.129704,18.7120111 107.129704,16.5456906 L107.129704,9.62624135 L110.949041,9.62624135 L110.949041,26.3420436 L106.75769,26.3420436 L102.764747,19.4225943 C102.235285,18.5297621 101.768202,17.6493304 101.363496,16.7812991 C100.958039,15.9132679 100.681472,15.2725781 100.532666,14.8592299 L100.334259,14.2392075 C100.582268,15.7272612 100.706272,17.4554325 100.706272,19.4225943 L100.706272,26.3420436 Z"
-                                                            id="Fill-7" fill="#111111"></path>
-                                                        <path
-                                                            d="M118.265155,16.3969604 C117.686091,16.3969604 117.173915,16.607768 116.727124,17.0293832 C116.281083,17.4509984 115.983473,18.0751542 115.834291,18.9018507 L120.199249,18.9018507 L120.199249,18.60424 C120.083511,17.1327203 119.438688,16.3969604 118.265155,16.3969604 L118.265155,16.3969604 Z M122.803342,25.6228928 C121.943578,26.1850464 120.629131,26.4661232 118.860376,26.4661232 C116.793259,26.4661232 115.18571,25.867144 114.036602,24.6680584 C112.886743,23.4693486 112.312565,21.9275597 112.312565,20.0426918 C112.312565,18.0420864 112.87096,16.4754966 113.986625,15.3429225 C115.103041,14.2107241 116.47949,13.6440613 118.116349,13.6440613 C119.80281,13.6440613 121.133416,14.1359456 122.108917,15.1197144 C123.084419,16.1034832 123.572546,17.5712452 123.572546,19.521873 C123.572546,19.9025291 123.506034,20.5552436 123.374139,21.4811436 L115.983473,21.4811436 C116.231481,22.1755686 116.660988,22.7129213 117.272743,23.0932017 C117.884499,23.4738578 118.620258,23.6636222 119.480023,23.6636222 C120.753135,23.6636222 121.860909,23.3081428 122.803342,22.5971838 L122.803342,25.6228928 Z"
-                                                            id="Fill-9" fill="#111111"></path>
-                                                        <path
-                                                            d="M131.434392,26.3420436 L127.714258,26.3420436 L123.671712,13.7679906 L127.416647,13.7679906 L128.507886,17.9097398 C128.772053,18.9513773 128.995261,19.8900535 129.17751,20.7246412 C129.359384,21.5596046 129.466478,22.1345344 129.499922,22.4483033 L129.574325,22.9195203 C129.689686,21.9274845 130.095143,20.2575577 130.789568,17.9097398 L132.004812,13.7679906 L135.129725,13.7679906 L136.320168,17.9097398 C136.617778,18.9679112 136.865787,19.9148544 137.063819,20.7494421 C137.262602,21.5844055 137.386606,22.1593353 137.436208,22.4731042 L137.510611,22.9195203 C137.625972,21.9440185 138.014895,20.2744674 138.675877,17.9097398 L139.841895,13.7679906 L143.413223,13.7679906 L139.395478,26.3420436 L135.675344,26.3420436 L134.584105,22.2250952 C134.352254,21.3322631 134.150089,20.4976754 133.976483,19.720205 C133.802877,18.9434861 133.691273,18.3895995 133.641671,18.0585451 L133.567268,17.5625273 C133.401553,18.6703005 133.054717,20.2248656 132.525255,22.2250952 L131.434392,26.3420436 Z"
-                                                            id="Fill-11" fill="#111111"></path>
-                                                        <g id="Group-15" transform="translate(0.000000, 7.177566)">
-                                                            <mask id="mask-2" fill="white">
-                                                                <use xlink:href="#path-1"></use>
-                                                            </mask>
-                                                            <g id="Clip-14"></g>
-                                                            <path
-                                                                d="M22.210693,24.8489922 C19.1804747,30.1469891 11.5406722,30.1469891 8.51082974,24.8489922 L1.05290045,11.808983 C-1.95589886,6.5485632 1.84239556,0 7.90283208,0 L22.8186907,0 C28.8791272,0 32.6774216,6.5485632 29.6686223,11.808983 L22.210693,24.8489922 Z"
-                                                                id="Fill-13" fill="#111111" mask="url(#mask-2)"></path>
-                                                        </g>
-                                                        <g id="Group-18" transform="translate(15.368963, 0.000000)">
-                                                            <mask id="mask-4" fill="white">
-                                                                <use xlink:href="#path-3"></use>
-                                                            </mask>
-                                                            <g id="Clip-17"></g>
-                                                            <path
-                                                                d="M8.51082974,3.97336618 C11.541048,-1.32463075 19.1808505,-1.32463075 22.210693,3.97336618 L29.6686223,17.0133754 C32.6774216,22.2737952 28.8791272,28.8223584 22.8186907,28.8223584 L7.90283208,28.8223584 C1.84239556,28.8223584 -1.95589886,22.2737952 1.05290045,17.0133754 L8.51082974,3.97336618 Z"
-                                                                id="Fill-16" fill="#33BC84" mask="url(#mask-4)"></path>
-                                                        </g>
-                                                        <path
-                                                            d="M23.2717579,28.8221705 C17.2113214,28.8221705 13.413027,22.2739831 16.4218263,17.0131875 L22.0471198,7.17775435 L22.8185779,7.17775435 C28.8790145,7.17775435 32.6776846,13.7259418 29.6685096,18.9867374 L24.043216,28.8221705 L23.2717579,28.8221705 Z"
-                                                            id="Fill-19" fill="#105157"></path>
-                                                    </g>
-                                                </g>
+                                            <path
+                                                d="M66.953271,26.3419308 L70.5742014,26.3419308 L70.5742014,13.7678778 L66.953271,13.7678778 L66.953271,26.3419308 Z M70.2517898,8.63409288 C70.6647623,9.04781687 70.8718122,9.54383474 70.8718122,10.1221465 C70.8718122,10.7012098 70.6647623,11.1972276 70.2517898,11.6102001 C69.8384416,12.0239241 69.3424237,12.2302224 68.7637362,12.2302224 C68.1846729,12.2302224 67.6886551,12.0239241 67.2756826,11.6102001 C66.8623344,11.1972276 66.6556603,10.7012098 66.6556603,10.1221465 C66.6556603,9.54383474 66.8623344,9.04781687 67.2756826,8.63409288 C67.6886551,8.22112042 68.1846729,8.01407054 68.7637362,8.01407054 C69.3424237,8.01407054 69.8384416,8.22112042 70.2517898,8.63409288 L70.2517898,8.63409288 Z"
+                                                id="Fill-2" fill="rgb(51, 188, 132)"></path>
+                                            <polygon id="Fill-4" fill="rgb(51, 188, 132)"
+                                                points="76.17879 26.3420436 72.5578596 26.3420436 72.5578596 9.22942705 76.17879 9.22942705 76.17879 19.3977934 80.1473088 13.7679906 84.3134831 13.7679906 79.9485258 19.7946077 84.3882616 26.3420436 80.1965348 26.3420436 76.17879 20.1666211">
+                                            </polygon>
+                                            <path
+                                                d="M89.992775,16.3969604 C89.4137117,16.3969604 88.9015357,16.607768 88.4547438,17.0293832 C88.0087035,17.4509984 87.7110928,18.0751542 87.5619116,18.9018507 L91.9268689,18.9018507 L91.9268689,18.60424 C91.8111314,17.1327203 91.1663082,16.3969604 89.992775,16.3969604 L89.992775,16.3969604 Z M94.5309627,25.6228928 C93.6711984,26.1850464 92.3567511,26.4661232 90.5879964,26.4661232 C88.5208795,26.4661232 86.9133307,25.867144 85.7642226,24.6680584 C84.614363,23.4693486 84.0401848,21.9275597 84.0401848,20.0426918 C84.0401848,18.0420864 84.5985806,16.4754966 85.7142451,15.3429225 C86.8306611,14.2107241 88.2071106,13.6440613 89.8439696,13.6440613 C91.5304304,13.6440613 92.8610359,14.1359456 93.8365377,15.1197144 C94.8120395,16.1034832 95.3001662,17.5712452 95.3001662,19.521873 C95.3001662,19.9025291 95.2336547,20.5552436 95.101759,21.4811436 L87.7110928,21.4811436 C87.9591017,22.1755686 88.3886081,22.7129213 89.0003635,23.0932017 C89.6121188,23.4738578 90.3478787,23.6636222 91.207643,23.6636222 C92.4807555,23.6636222 93.5885288,23.3081428 94.5309627,22.5971838 L94.5309627,25.6228928 Z"
+                                                id="Fill-5" fill="rgb(51, 188, 132)"></path>
+                                            <path
+                                                d="M100.706272,26.3420436 L96.8869349,26.3420436 L96.8869349,9.62624135 L101.078286,9.62624135 L104.972026,16.5456906 C105.517646,17.5215682 105.99262,18.4350678 106.397702,19.2861894 C106.803159,20.1380625 107.063568,20.7370416 107.179306,21.0842541 L107.377713,21.6298738 C107.211998,20.4063631 107.129704,18.7120111 107.129704,16.5456906 L107.129704,9.62624135 L110.949041,9.62624135 L110.949041,26.3420436 L106.75769,26.3420436 L102.764747,19.4225943 C102.235285,18.5297621 101.768202,17.6493304 101.363496,16.7812991 C100.958039,15.9132679 100.681472,15.2725781 100.532666,14.8592299 L100.334259,14.2392075 C100.582268,15.7272612 100.706272,17.4554325 100.706272,19.4225943 L100.706272,26.3420436 Z"
+                                                id="Fill-7" fill="rgb(51, 188, 132)"></path>
+                                            <path
+                                                d="M118.265155,16.3969604 C117.686091,16.3969604 117.173915,16.607768 116.727124,17.0293832 C116.281083,17.4509984 115.983473,18.0751542 115.834291,18.9018507 L120.199249,18.9018507 L120.199249,18.60424 C120.083511,17.1327203 119.438688,16.3969604 118.265155,16.3969604 L118.265155,16.3969604 Z M122.803342,25.6228928 C121.943578,26.1850464 120.629131,26.4661232 118.860376,26.4661232 C116.793259,26.4661232 115.18571,25.867144 114.036602,24.6680584 C112.886743,23.4693486 112.312565,21.9275597 112.312565,20.0426918 C112.312565,18.0420864 112.87096,16.4754966 113.986625,15.3429225 C115.103041,14.2107241 116.47949,13.6440613 118.116349,13.6440613 C119.80281,13.6440613 121.133416,14.1359456 122.108917,15.1197144 C123.084419,16.1034832 123.572546,17.5712452 123.572546,19.521873 C123.572546,19.9025291 123.506034,20.5552436 123.374139,21.4811436 L115.983473,21.4811436 C116.231481,22.1755686 116.660988,22.7129213 117.272743,23.0932017 C117.884499,23.4738578 118.620258,23.6636222 119.480023,23.6636222 C120.753135,23.6636222 121.860909,23.3081428 122.803342,22.5971838 L122.803342,25.6228928 Z"
+                                                id="Fill-9" fill="rgb(51, 188, 132)"></path>
+                                            <path
+                                                d="M131.434392,26.3420436 L127.714258,26.3420436 L123.671712,13.7679906 L127.416647,13.7679906 L128.507886,17.9097398 C128.772053,18.9513773 128.995261,19.8900535 129.17751,20.7246412 C129.359384,21.5596046 129.466478,22.1345344 129.499922,22.4483033 L129.574325,22.9195203 C129.689686,21.9274845 130.095143,20.2575577 130.789568,17.9097398 L132.004812,13.7679906 L135.129725,13.7679906 L136.320168,17.9097398 C136.617778,18.9679112 136.865787,19.9148544 137.063819,20.7494421 C137.262602,21.5844055 137.386606,22.1593353 137.436208,22.4731042 L137.510611,22.9195203 C137.625972,21.9440185 138.014895,20.2744674 138.675877,17.9097398 L139.841895,13.7679906 L143.413223,13.7679906 L139.395478,26.3420436 L135.675344,26.3420436 L134.584105,22.2250952 C134.352254,21.3322631 134.150089,20.4976754 133.976483,19.720205 C133.802877,18.9434861 133.691273,18.3895995 133.641671,18.0585451 L133.567268,17.5625273 C133.401553,18.6703005 133.054717,20.2248656 132.525255,22.2250952 L131.434392,26.3420436 Z"
+                                                id="Fill-11" fill="rgb(51, 188, 132)"></path>
+                                            <g id="Group-15" transform="translate(0.000000, 7.177566)">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-1"></use>
+                                                </mask>
+                                                <g id="Clip-14"></g>
+                                                <path
+                                                    d="M22.210693,24.8489922 C19.1804747,30.1469891 11.5406722,30.1469891 8.51082974,24.8489922 L1.05290045,11.808983 C-1.95589886,6.5485632 1.84239556,0 7.90283208,0 L22.8186907,0 C28.8791272,0 32.6774216,6.5485632 29.6686223,11.808983 L22.210693,24.8489922 Z"
+                                                    id="Fill-13" fill="#111111" mask="url(#mask-2)"></path>
                                             </g>
+                                            <g id="Group-18" transform="translate(15.368963, 0.000000)">
+                                                <mask id="mask-4" fill="white">
+                                                    <use xlink:href="#path-3"></use>
+                                                </mask>
+                                                <g id="Clip-17"></g>
+                                                <path
+                                                    d="M8.51082974,3.97336618 C11.541048,-1.32463075 19.1808505,-1.32463075 22.210693,3.97336618 L29.6686223,17.0133754 C32.6774216,22.2737952 28.8791272,28.8223584 22.8186907,28.8223584 L7.90283208,28.8223584 C1.84239556,28.8223584 -1.95589886,22.2737952 1.05290045,17.0133754 L8.51082974,3.97336618 Z"
+                                                    id="Fill-16" fill="#33BC84" mask="url(#mask-4)"></path>
+                                            </g>
+                                            <path
+                                                d="M23.2717579,28.8221705 C17.2113214,28.8221705 13.413027,22.2739831 16.4218263,17.0131875 L22.0471198,7.17775435 L22.8185779,7.17775435 C28.8790145,7.17775435 32.6776846,13.7259418 29.6685096,18.9867374 L24.043216,28.8221705 L23.2717579,28.8221705 Z"
+                                                id="Fill-19" fill="#105157"></path>
                                         </g>
-                                    </svg>
-                                    <!-- <img src="https://img.eselt.de/img/12422235_7i2uEaGOhJs1GZ5r/logo.png" class=""> -->
-                                </div>
-                                <div class="header__slogan"> Save money &amp; environment </div>
-                            </div>
-                            <div class="header__contact word-break"><!---->
-                                <div><i aria-hidden="true" class="fa fa-envelope"></i><span><a
-                                            href="https://www.ebay.co.uk/contact/sendmsg?&amp;recipient=azganoth"
-                                            target="_blank"> Send us a message </a></span></div>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="yiNSCxqLDZopv"><a href="https://www.ebay.com/itm/255210518350" target="_blank"><span>
-                                Created with <strong><span class="ntLnbYSEiLa6yZjw2gP"> &#x45;&#x73;&#x65;&#x6C;&#x74;
-                                    </span></strong></span> -
-                            <span>&#x52;&#x65;&#x73;&#x70;&#x6F;&#x6E;&#x73;&#x69;&#x76;&#x65;&#x20;&#x44;&#x65;&#x73;&#x69;&#x67;&#x6E;&#x73;&#x20;&#x66;&#x6F;&#x72;&#x20;&#x65;&#x42;&#x61;&#x79;&#x20;&#x53;&#x65;&#x6C;&#x6C;&#x65;&#x72;&#x73;</span></a>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
                     </div>
-                    <nav class="menu">
-                        <div class="container">
-                            <ul class="menu__list">
-                                <li class="menu__item"><a href="https://www.ebay.co.uk/usr/azganoth" target="_blank"
-                                        class=""> Our Store </a></li>
-                                <li class="menu__item"><a href="https://www.ebay.co.uk/usr/azganoth" target="_blank"
-                                        class=""> Seller Profile </a></li>
-                                <li class="menu__item"><a href="https://www.ebay.co.uk/usr/azganoth#tab2"
-                                        target="_blank" class=""> Feedback </a></li>
-                                <li class="menu__item"><a href="https://www.ebay.co.uk/usr/azganoth#tab1"
-                                        target="_blank" class=""> About us </a></li>
-                                <li class="menu__item"><a
-                                        href="https://www.ebay.co.uk/contact/sendmsg?&amp;recipient=azganoth"
-                                        target="_blank" class=""> Contact </a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <div class="yiNSCxqLDZopv"><a href="https://www.ebay.com/itm/255210518350" target="_blank"><span>
-                                Created with <strong><span class="ntLnbYSEiLa6yZjw2gP"> &#x45;&#x73;&#x65;&#x6C;&#x74;
-                                    </span></strong></span> -
-                            <span>&#x52;&#x65;&#x73;&#x70;&#x6F;&#x6E;&#x73;&#x69;&#x76;&#x65;&#x20;&#x44;&#x65;&#x73;&#x69;&#x67;&#x6E;&#x73;&#x20;&#x66;&#x6F;&#x72;&#x20;&#x65;&#x42;&#x61;&#x79;&#x20;&#x53;&#x65;&#x6C;&#x6C;&#x65;&#x72;&#x73;</span></a>
-                    </div>
-                    <main class="content">
-                        <div class="content__header">
-                            <h1 class="content__title" style="text-align: center;">Apple iPhone XR 128GB - Różne kolory
-                                - GWARANCJA! </h1>
-                        </div>
-                        <div style="height: 3px; width: 300px; background-color: rgb(39, 47, 70); margin: 10px auto 0;">
-                        </div>
+                </div>
+            </div>
+            <section class="whyus">
+                <div>
+                    <span><img src="https://exio.pl/ebay/sweetorganic/img/i1.png"></span> <span
+                        class="hidden-990">Produkte in</span> bester Qualität
+                </div>
+                <div class="spacer"></div>
+                <div>
+                    <span><img src="https://exio.pl/ebay/sweetorganic/img/i2.png"></span> <span class="hidden-990">Die
+                        besten Angebote zu</span> tollen Preisen
+                </div>
+                <div class="spacer"></div>
+                <div>
+                    <span><img src="https://exio.pl/ebay/sweetorganic/img/i3.png"></span> Pünktliche Expresslieferung
+                </div>
+            </section>
+        </div>
+    </header>
 
-                        <div>
-                            <div class="product-2458777"></div><!----><!----><!---->
-                            <div id="layout__layout-4">
-                                <div style="" class="row">
-                                    <div class="col col-md-6">
-                                        <div id="layout__gallery">
-                                            <div><!----><!----><!---->
-                                                <div>
-                                                    <style>
-                                                        .thumb1:active~.slider__wrapper>.slider {
-                                                            -webkit-transition: all 0s;
-                                                            -ms-transition: all 0s;
-                                                            transition: all 0s;
-                                                            transform: translateX(-0%);
-                                                            -webkit-transform: translateX(-0%);
-                                                            -ms-transform: translateX(-0%);
-                                                        }
-                                                    </style>
-                                                    <style>
-                                                        .thumb2:active~.slider__wrapper>.slider {
-                                                            -webkit-transition: all 0s;
-                                                            -ms-transition: all 0s;
-                                                            transition: all 0s;
-                                                            transform: translateX(-100%);
-                                                            -webkit-transform: translateX(-100%);
-                                                            -ms-transform: translateX(-100%);
-                                                        }
-                                                    </style>
-                                                    <style>
-                                                        .thumb3:active~.slider__wrapper>.slider {
-                                                            -webkit-transition: all 0s;
-                                                            -ms-transition: all 0s;
-                                                            transition: all 0s;
-                                                            transform: translateX(-200%);
-                                                            -webkit-transform: translateX(-200%);
-                                                            -ms-transform: translateX(-200%);
-                                                        }
-                                                    </style>
-                                                    <div
-                                                        class="content__gallery content__gallery--flex-column content__gallery--right ">
-                                                        <div class="thumb__float thumb1">
-                                                            <div class="thumb__wrapper vertical-align-middle"><span
-                                                                    class="vertical-align-helper"></span><img
-                                                                    src="https://img.eselt.de/img/12422355_IX8eCUGF7mtcymNa/thumb.jpg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="thumb__float thumb2">
-                                                            <div class="thumb__wrapper vertical-align-middle"><span
-                                                                    class="vertical-align-helper"></span><img
-                                                                    src="https://img.eselt.de/img/12422356_z2xaVqproxiG7sIO/thumb.jpg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="thumb__float thumb3">
-                                                            <div class="thumb__wrapper vertical-align-middle"><span
-                                                                    class="vertical-align-helper"></span><img
-                                                                    src="https://img.eselt.de/img/12422357_cQovIKz4ERtAZO9N/thumb.jpg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="slider__wrapper">
-                                                            <div class="slider">
-                                                                <div
-                                                                    style="background-image: url(&quot;https://img.eselt.de/img/12422355_IX8eCUGF7mtcymNa/resized.jpg&quot;);">
-                                                                </div>
-                                                                <div
-                                                                    style="background-image: url(&quot;https://img.eselt.de/img/12422356_z2xaVqproxiG7sIO/resized.jpg&quot;);">
-                                                                </div>
-                                                                <div
-                                                                    style="background-image: url(&quot;https://img.eselt.de/img/12422357_cQovIKz4ERtAZO9N/resized.jpg&quot;);">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col col-md-6">
-                                        <div id="layout__content">
-                                            <div class="row flex direction-column">
-                                                <div class="col col-md-12 order-1">
-                                                    <div class="content__description mb0">
-                                                        <p>Dzień dobry!</p><br>
-                                                        <p>Do zaoferowania mamy telefon iPhone XR 128GB.</p><br>
-                                                        <p>Zapewniamy:</p>
-                                                        <p>- 3 miesiące gwarancji</p>
-                                                        <p>- faktura vat-marża</p>
-                                                        <p>- zamienny ekologiczny kartonik</p>
-                                                        <p>- kabel USB</p>
-                                                        <p>- kluczyk do tacki SIM</p><br>
-                                                        <p>Do zestawu nie dołączamy oryginalnych akcesoriów ani pudełka.
-                                                            Urządzenie wysyłane jest w zamiennym ekologicznym kartoniku.
-                                                        </p><br>
-                                                        <p>W celu zapewnienia bezpieczeństwa oraz wygody transakcji
-                                                            udostępniamy możliwość realizacji zamówienia poprzez
-                                                            "Wysyłki OLX".</p><br>
-                                                        <p>Telefony są przez nas częściowo odnowione, zwykle wymieniamy
-                                                            tylne szkło lub baterię, aby zapewnić najlepszą jakość.
-                                                            Każdy oferowany egzemplarz jest przez nas skrupulatnie
-                                                            testowany i z dbałością przygotowany do sprzedaży.</p><br>
-                                                        <p>Po więcej informacji zapraszamy do kontaktu telefonicznego
-                                                            lub pisania wiadomości - chętnie odpowiemy na wszystkie
-                                                            pytania :)</p><br>
-                                                        <p>Na zdjęciach widoczne są przykładowe sztuki z naszego
-                                                            magazynu.</p><br>
-                                                        <p>Zapraszamy serdecznie!</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col col-md-12 order-2">
-                                                    <div class="content__bulletpoints" style="display: none;">
-                                                        <ul class="bulletpoints__list"></ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!----><!----><!----><!----><!---->
+    <div class="container">
+
+        <main id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="image-box">
+                            <span>bestseller</span>
+                            <img
+                                src="https://github.com/LangeRadoslaw/LikeNew/blob/main/Zrzut%20ekranu%202023-04-26%20o%2022.35.15.png?raw=true">
                         </div>
-                    </main>
-                    <div class="yiNSCxqLDZopv"><a href="https://www.ebay.com/itm/255210518350" target="_blank"><span>
-                                Created with <strong><span class="ntLnbYSEiLa6yZjw2gP"> &#x45;&#x73;&#x65;&#x6C;&#x74;
-                                    </span></strong></span> -
-                            <span>&#x52;&#x65;&#x73;&#x70;&#x6F;&#x6E;&#x73;&#x69;&#x76;&#x65;&#x20;&#x44;&#x65;&#x73;&#x69;&#x67;&#x6E;&#x73;&#x20;&#x66;&#x6F;&#x72;&#x20;&#x65;&#x42;&#x61;&#x79;&#x20;&#x53;&#x65;&#x6C;&#x6C;&#x65;&#x72;&#x73;</span></a>
                     </div>
-                    <aside class="aside">
-                        <div class="container">
-                            <div id="aside-payment">
-                                <div class="aside-block">
-                                    <div class="aside-block__title"><i class="fas fa-pound-sign"></i> Payment </div>
-                                    <div class="aside-block__icons"><img
-                                            src="https://img.eselt.de/assets/templates/icons/payment/cash.png"><img
-                                            src="https://img.eselt.de/assets/templates/icons/payment/cash_on_collection.png"><img
-                                            src="https://img.eselt.de/assets/templates/icons/payment/bank_transfer.png">
-                                    </div>
-                                    <div class="aside-block__body">
-                                        <div>Preferujemy sprzedaż bezpośrednią ale akceptujemy też inne formy płatności.
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="desc">
+                            <h3>iPhone XR 128GB</h3>
+
+                            <p class="price">Preis: 399 Euro </p>
+
+                            <p>Ashwagandha-Extrakt zeigt unter anderem, folgende Eigenschaften:</p>
+
+                            <ul>
+                                <li>Unterstützt die Stressresistenz des Körpers</li>
+                                <li>Unterstützt die Konzentration</li>
+                                <li>Unterstützt die Prozesse des Erinnerns</li>
+                                <li>Optimiert die körperliche und geistige Leistungsfähigkeit</li>
+                                <li>Unterstützt die Aufrechterhaltung der emotionalen Stabilität </li>
+                            </ul>
+
+                            <div class="product-mini-desc">
+
+                                <p><img src="https://exio.pl/ebay/sweetorganic/img/check.png"> Vegan</p>
+                                <p><img src="https://exio.pl/ebay/sweetorganic/img/check.png"> Ökologisch</p>
+                                <p><img src="https://exio.pl/ebay/sweetorganic/img/no.png"> keine Allergene </p>
+
                             </div>
-                            <div id="aside-shipping">
-                                <div class="aside-block">
-                                    <div class="aside-block__title"><i class="fa fa-truck"></i> Shipping </div>
-                                    <div class="aside-block__icons"><img
-                                            src="https://img.eselt.de/assets/templates/icons/shipping/dhl.png"><img
-                                            src="https://img.eselt.de/assets/templates/icons/shipping/dpd.png"><img
-                                            src="https://img.eselt.de/assets/templates/icons/shipping/ups.png"><img
-                                            src="https://img.eselt.de/assets/templates/icons/shipping/other.png"></div>
-                                    <div class="aside-block__body">
-                                        <div>
-                                            <p>Możliwy także odbiór osobisty</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="aside-returns">
-                                <div class="aside-block">
-                                    <div class="aside-block__title"><i class="fas fa-undo"></i> Returns </div>
-                                    <div class="aside-block__body">
-                                        <div>
-                                            <p>Każdy zakup, którego dokonujesz u niego jako konsument, jest chroniony na
-                                                mocy przepisów konsumenckich. Oznacza to, że masz pewne prawa związane
-                                                ze zwrotami, gwarancjami i inne, w zależności od przedmiotów, które
-                                                kupisz, lub usług, które zlecisz.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="aside-other">
-                                <div class="aside-block">
-                                    <div class="aside-block__title"><i class="fa fa-info-circle"></i> Other </div>
-                                    <div class="aside-block__body">
-                                        <div>
-                                            <p>Szanujemy Twój czas i wygodę. Gwarantujemy profesjonalizm. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
-                    </aside>
-                    <div class="yiNSCxqLDZopv"><a href="https://www.ebay.com/itm/255210518350" target="_blank"><span>
-                                Created with <strong><span class="ntLnbYSEiLa6yZjw2gP"> &#x45;&#x73;&#x65;&#x6C;&#x74;
-                                    </span></strong></span> -
-                            <span>&#x52;&#x65;&#x73;&#x70;&#x6F;&#x6E;&#x73;&#x69;&#x76;&#x65;&#x20;&#x44;&#x65;&#x73;&#x69;&#x67;&#x6E;&#x73;&#x20;&#x66;&#x6F;&#x72;&#x20;&#x65;&#x42;&#x61;&#x79;&#x20;&#x53;&#x65;&#x6C;&#x6C;&#x65;&#x72;&#x73;</span></a>
                     </div>
-                    <div><!---->
-                        <footer class="footer">
-                            <div class="footer__contact">
-                                <ul><!---->
-                                    <li><a href="https://www.ebay.co.uk/contact/sendmsg?&amp;recipient=azganoth"
-                                            target="_blank"> Send us a message </a></li>
-                                </ul>
-                            </div>
-                        </footer>
-                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="container">
+        <div class="title mb-4 mt-4">
+            <h3><img src="https://exio.pl/ebay/sweetorganic/img/tags.png"> Überprüfen Sie auch</h3>
+        </div>
+    </div>
+    <div class="container related">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product">
+                    <a target="_blank" href="LINK_DO_AUKCJI_1">
+                        <p class="arrow"><img src="https://exio.pl/ebay/sweetorganic/img/related.png"></p>
+                        <img src="https://exio.pl/ebay/sweetorganic/img/product-mini.jpg">
+                        <p class="name">Lorem ipsum dolor sit amet consectetur scing</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product">
+                    <a target="_blank" href="LINK_DO_AUKCJI_2">
+                        <p class="arrow"><img src="https://exio.pl/ebay/sweetorganic/img/related.png"></p>
+                        <img src="https://exio.pl/ebay/sweetorganic/img/product-mini.jpg">
+                        <p class="name">Amet tis dolor ipsum dolor sit amet consectetur scing </p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product">
+                    <a target="_blank" href="LINK_DO_AUKCJI_3">
+                        <p class="arrow"><img src="https://exio.pl/ebay/sweetorganic/img/related.png"></p>
+                        <img src="https://exio.pl/ebay/sweetorganic/img/product-mini.jpg">
+                        <p class="name">Ipsum dolor sit amet consectetur scing</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="product">
+                    <a target="_blank" href="LINK_DO_AUKCJI_4">
+                        <p class="arrow"><img src="https://exio.pl/ebay/sweetorganic/img/related.png"></p>
+                        <img src="https://exio.pl/ebay/sweetorganic/img/product-mini.jpg">
+                        <p class="name">Lorem ipsum dolor sit amet consectetur scing</p>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-</html>
+    <div class="container">
+        <div class="title mb-4 mt-4">
+            <h3><img src="https://exio.pl/ebay/sweetorganic/img/info.png"> Informationen für Käufer </h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <div class="info-over">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-12">
+                            <div class="shipping-box">
+                                <h3><img src="https://exio.pl/ebay/sweetorganic/img/truck.png"> Versand</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna </p>
+                                <img src="https://exio.pl/ebay/sweetorganic/img/shipping.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="shipping-box">
+                                <h3><img src="https://exio.pl/ebay/sweetorganic/img/card.png"> Zahlungen</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna </p>
+                                <img src="https://exio.pl/ebay/sweetorganic/img/payment.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="shipping-box">
+                                <h3><img src="https://exio.pl/ebay/sweetorganic/img/message.png"> Kontakt</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna </p>
+                                <a href="LINK_DO_KONTAKTU" target="_blank">Schreib uns </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="copyrights">
+            <p>Alle Rechte vorbehalten © <svg width="144px" height="36px" viewBox="0 0 144 36" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <polygon id="path-1"
+                        points="-6.67503588e-16 0 30.7215227 0 30.7215227 28.8224335 -6.67503588e-16 28.8224335">
+                    </polygon>
+                    <polygon id="path-3" points="0 0 30.7215227 0 30.7215227 28.8223584 0 28.8223584">
+                    </polygon>
+                </defs>
+                <g id="Homepage-[desktop]" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="homepage" transform="translate(-50.000000, -32.000000)">
+                        <g id="topbar" transform="translate(50.000000, 20.000000)">
+                            <g id="likeNew-logo" transform="translate(0.000000, 12.000000)">
+                                <polygon id="Fill-1" fill="rgb(51, 188, 132)"
+                                    points="65.4654429 26.3420436 55.4706828 26.3420436 55.4706828 9.62624135 59.2900204 9.62624135 59.2900204 22.9939229 65.4654429 22.9939229">
+                                </polygon>
+                                <path
+                                    d="M66.953271,26.3419308 L70.5742014,26.3419308 L70.5742014,13.7678778 L66.953271,13.7678778 L66.953271,26.3419308 Z M70.2517898,8.63409288 C70.6647623,9.04781687 70.8718122,9.54383474 70.8718122,10.1221465 C70.8718122,10.7012098 70.6647623,11.1972276 70.2517898,11.6102001 C69.8384416,12.0239241 69.3424237,12.2302224 68.7637362,12.2302224 C68.1846729,12.2302224 67.6886551,12.0239241 67.2756826,11.6102001 C66.8623344,11.1972276 66.6556603,10.7012098 66.6556603,10.1221465 C66.6556603,9.54383474 66.8623344,9.04781687 67.2756826,8.63409288 C67.6886551,8.22112042 68.1846729,8.01407054 68.7637362,8.01407054 C69.3424237,8.01407054 69.8384416,8.22112042 70.2517898,8.63409288 L70.2517898,8.63409288 Z"
+                                    id="Fill-2" fill="rgb(51, 188, 132)"></path>
+                                <polygon id="Fill-4" fill="rgb(51, 188, 132)"
+                                    points="76.17879 26.3420436 72.5578596 26.3420436 72.5578596 9.22942705 76.17879 9.22942705 76.17879 19.3977934 80.1473088 13.7679906 84.3134831 13.7679906 79.9485258 19.7946077 84.3882616 26.3420436 80.1965348 26.3420436 76.17879 20.1666211">
+                                </polygon>
+                                <path
+                                    d="M89.992775,16.3969604 C89.4137117,16.3969604 88.9015357,16.607768 88.4547438,17.0293832 C88.0087035,17.4509984 87.7110928,18.0751542 87.5619116,18.9018507 L91.9268689,18.9018507 L91.9268689,18.60424 C91.8111314,17.1327203 91.1663082,16.3969604 89.992775,16.3969604 L89.992775,16.3969604 Z M94.5309627,25.6228928 C93.6711984,26.1850464 92.3567511,26.4661232 90.5879964,26.4661232 C88.5208795,26.4661232 86.9133307,25.867144 85.7642226,24.6680584 C84.614363,23.4693486 84.0401848,21.9275597 84.0401848,20.0426918 C84.0401848,18.0420864 84.5985806,16.4754966 85.7142451,15.3429225 C86.8306611,14.2107241 88.2071106,13.6440613 89.8439696,13.6440613 C91.5304304,13.6440613 92.8610359,14.1359456 93.8365377,15.1197144 C94.8120395,16.1034832 95.3001662,17.5712452 95.3001662,19.521873 C95.3001662,19.9025291 95.2336547,20.5552436 95.101759,21.4811436 L87.7110928,21.4811436 C87.9591017,22.1755686 88.3886081,22.7129213 89.0003635,23.0932017 C89.6121188,23.4738578 90.3478787,23.6636222 91.207643,23.6636222 C92.4807555,23.6636222 93.5885288,23.3081428 94.5309627,22.5971838 L94.5309627,25.6228928 Z"
+                                    id="Fill-5" fill="rgb(51, 188, 132)"></path>
+                                <path
+                                    d="M100.706272,26.3420436 L96.8869349,26.3420436 L96.8869349,9.62624135 L101.078286,9.62624135 L104.972026,16.5456906 C105.517646,17.5215682 105.99262,18.4350678 106.397702,19.2861894 C106.803159,20.1380625 107.063568,20.7370416 107.179306,21.0842541 L107.377713,21.6298738 C107.211998,20.4063631 107.129704,18.7120111 107.129704,16.5456906 L107.129704,9.62624135 L110.949041,9.62624135 L110.949041,26.3420436 L106.75769,26.3420436 L102.764747,19.4225943 C102.235285,18.5297621 101.768202,17.6493304 101.363496,16.7812991 C100.958039,15.9132679 100.681472,15.2725781 100.532666,14.8592299 L100.334259,14.2392075 C100.582268,15.7272612 100.706272,17.4554325 100.706272,19.4225943 L100.706272,26.3420436 Z"
+                                    id="Fill-7" fill="rgb(51, 188, 132)"></path>
+                                <path
+                                    d="M118.265155,16.3969604 C117.686091,16.3969604 117.173915,16.607768 116.727124,17.0293832 C116.281083,17.4509984 115.983473,18.0751542 115.834291,18.9018507 L120.199249,18.9018507 L120.199249,18.60424 C120.083511,17.1327203 119.438688,16.3969604 118.265155,16.3969604 L118.265155,16.3969604 Z M122.803342,25.6228928 C121.943578,26.1850464 120.629131,26.4661232 118.860376,26.4661232 C116.793259,26.4661232 115.18571,25.867144 114.036602,24.6680584 C112.886743,23.4693486 112.312565,21.9275597 112.312565,20.0426918 C112.312565,18.0420864 112.87096,16.4754966 113.986625,15.3429225 C115.103041,14.2107241 116.47949,13.6440613 118.116349,13.6440613 C119.80281,13.6440613 121.133416,14.1359456 122.108917,15.1197144 C123.084419,16.1034832 123.572546,17.5712452 123.572546,19.521873 C123.572546,19.9025291 123.506034,20.5552436 123.374139,21.4811436 L115.983473,21.4811436 C116.231481,22.1755686 116.660988,22.7129213 117.272743,23.0932017 C117.884499,23.4738578 118.620258,23.6636222 119.480023,23.6636222 C120.753135,23.6636222 121.860909,23.3081428 122.803342,22.5971838 L122.803342,25.6228928 Z"
+                                    id="Fill-9" fill="rgb(51, 188, 132)"></path>
+                                <path
+                                    d="M131.434392,26.3420436 L127.714258,26.3420436 L123.671712,13.7679906 L127.416647,13.7679906 L128.507886,17.9097398 C128.772053,18.9513773 128.995261,19.8900535 129.17751,20.7246412 C129.359384,21.5596046 129.466478,22.1345344 129.499922,22.4483033 L129.574325,22.9195203 C129.689686,21.9274845 130.095143,20.2575577 130.789568,17.9097398 L132.004812,13.7679906 L135.129725,13.7679906 L136.320168,17.9097398 C136.617778,18.9679112 136.865787,19.9148544 137.063819,20.7494421 C137.262602,21.5844055 137.386606,22.1593353 137.436208,22.4731042 L137.510611,22.9195203 C137.625972,21.9440185 138.014895,20.2744674 138.675877,17.9097398 L139.841895,13.7679906 L143.413223,13.7679906 L139.395478,26.3420436 L135.675344,26.3420436 L134.584105,22.2250952 C134.352254,21.3322631 134.150089,20.4976754 133.976483,19.720205 C133.802877,18.9434861 133.691273,18.3895995 133.641671,18.0585451 L133.567268,17.5625273 C133.401553,18.6703005 133.054717,20.2248656 132.525255,22.2250952 L131.434392,26.3420436 Z"
+                                    id="Fill-11" fill="rgb(51, 188, 132)"></path>
+                                <g id="Group-15" transform="translate(0.000000, 7.177566)">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Clip-14"></g>
+                                    <path
+                                        d="M22.210693,24.8489922 C19.1804747,30.1469891 11.5406722,30.1469891 8.51082974,24.8489922 L1.05290045,11.808983 C-1.95589886,6.5485632 1.84239556,0 7.90283208,0 L22.8186907,0 C28.8791272,0 32.6774216,6.5485632 29.6686223,11.808983 L22.210693,24.8489922 Z"
+                                        id="Fill-13" fill="#111111" mask="url(#mask-2)"></path>
+                                </g>
+                                <g id="Group-18" transform="translate(15.368963, 0.000000)">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <g id="Clip-17"></g>
+                                    <path
+                                        d="M8.51082974,3.97336618 C11.541048,-1.32463075 19.1808505,-1.32463075 22.210693,3.97336618 L29.6686223,17.0133754 C32.6774216,22.2737952 28.8791272,28.8223584 22.8186907,28.8223584 L7.90283208,28.8223584 C1.84239556,28.8223584 -1.95589886,22.2737952 1.05290045,17.0133754 L8.51082974,3.97336618 Z"
+                                        id="Fill-16" fill="#33BC84" mask="url(#mask-4)"></path>
+                                </g>
+                                <path
+                                    d="M23.2717579,28.8221705 C17.2113214,28.8221705 13.413027,22.2739831 16.4218263,17.0131875 L22.0471198,7.17775435 L22.8185779,7.17775435 C28.8790145,7.17775435 32.6776846,13.7259418 29.6685096,18.9867374 L24.043216,28.8221705 L23.2717579,28.8221705 Z"
+                                    id="Fill-19" fill="#105157"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg> <a
+                    target="_blank" href="LINK_DO_AUKCJI">Andere auktionen</a> </p>
+        </div>
+    </div>
+</div>
